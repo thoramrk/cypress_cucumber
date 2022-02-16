@@ -1,0 +1,43 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --headed --browser chrome",
+    "search": "cypress run --headed --browser chrome --spec \"**/search.feature\"",
+    "testAPI": "cypress run  --spec \"**/Restful_Webservices.feature\"",
+    "test-search-feature": "cypress run --headed --browser chrome --spec 'cypress/integration/**/Restful_Webservices.feature'",
+    "testfeature": "cypress run --headed --browser chrome  --spec \"**/test.feature\"",
+    "test-tag-smoke": "cypress-tags run --headed --browser chrome TAGS=@smoke",
+    "report": "node cucumber-html-report.js"
+  },
+  "author": "Khadar",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.2.0",
+    "cypress": "^9.1.1",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.1.3",
+    "typescript": "^3.9.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "report",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "dependencies": {
+    "chromedriver": "^95.0.0",
+    "cucumber": "^7.0.0-rc.0",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "multiple-cucumber-html-reporter": "^1.18.0",
+    "request": "^2.88.2",
+    "underscore": "^1.13.2",
+    "variable": "0.0.8"
+  }
+}

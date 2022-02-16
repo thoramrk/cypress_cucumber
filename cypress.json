@@ -1,0 +1,11 @@
+{
+    "env": {
+        "TAGS": "@smoke"
+    },
+    "video": true,
+    
+    "chromeWebSecurity": true,
+    "ignoreTestFiles": "*.js",
+    "testFiles": "*/*.feature"
+  }
+  

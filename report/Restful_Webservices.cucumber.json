@@ -1,0 +1,114 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "To test various RESTFUL API services!",
+    "line": 1,
+    "id": "to-test-various-restful-api-services!",
+    "tags": [],
+    "uri": "Restful_Webservices.feature",
+    "elements": [
+      {
+        "id": "to-test-various-restful-api-services!;manifest-api",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "manifest API",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 48
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "key",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "uri",
+                      "manifest.json"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "status_code",
+                      "200"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "name",
+                      "NuClear"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "I initiate a \"GET\" request for manifest",
+            "result": {
+              "status": "passed",
+              "duration": 984000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "to-test-various-restful-api-services!;main-css-api",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "main CSS API",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 55
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "key",
+                      "value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "uri",
+                      "static/css/main.16283704.css"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "status_code",
+                      "200"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 57,
+            "name": "I initiate a \"GET\" request for main css",
+            "result": {
+              "status": "passed",
+              "duration": 1248000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
